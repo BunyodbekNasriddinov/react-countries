@@ -7,7 +7,7 @@ function App() {
     <>
       <Header />
       <Searchbar />
-      <Country />
+      <Country/>
     </>
   );
 }

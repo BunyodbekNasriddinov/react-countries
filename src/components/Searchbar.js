@@ -16,9 +16,7 @@ const Searchbar = () => {
               />
             </div>
             <select className="form__select">
-              <option className="form__option" selected disabled>
-                Filter by Region
-              </option>
+              <option className="form__option">Filter by Region</option>
               <option className="form__option" value="Africa">
                 Africa
               </option>

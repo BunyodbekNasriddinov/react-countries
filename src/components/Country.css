@@ -43,6 +43,6 @@
   font-weight: 600;
 }
 
-.country__subitem + .country__subitem {
+.country__subitem+.country__subitem {
   margin-top: 8px;
 }
