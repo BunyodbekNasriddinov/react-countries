@@ -1,3 +1,8 @@
+.country__inner {
+  padding-bottom: 90px;
+
+}
+
 .country__list {
   display: flex;
   justify-content: space-between;
