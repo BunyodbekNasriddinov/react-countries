@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 main {
@@ -26,9 +25,12 @@ img {
   object-fit: cover;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1320px;
-  width: 100%;
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: auto;
 }
