@@ -26,7 +26,10 @@ function App() {
         data: data,
         isError: "",
       });
-    } else if (err) {
+    }
+
+    if (err.message) {
+      console.log(err);
       setCountries({
         isLoading: false,
         data: [],
@@ -51,8 +54,6 @@ function App() {
   };
 
   const handleSelect = (evt) => {
-    console.log(evt, "select");
-    console.log(selectValue);
     if (selectValue.current.value === "All") getCountries("all");
     else if (selectValue.current.value)
       getCountries(`region/${selectValue.current.value}`);
@@ -87,7 +88,13 @@ function App() {
                 <option value="Oceania">Oceania</option>
               </select>
             </form>
-            {counties.isError ? <h2>{counties.isError}</h2> : ""}
+            {counties.isError ? (
+              <h2 className="h2 display-1 text-center mt-5 text-warning">
+                {counties.isError}
+              </h2>
+            ) : (
+              ""
+            )}
             {counties.isLoading ? (
               <img
                 className="loading m-auto"
