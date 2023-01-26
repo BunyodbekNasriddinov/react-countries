@@ -18,10 +18,10 @@ export const Card = ({ obj }) => {
             <strong>Population</strong>: {obj?.population}
           </p>
           <p>
-            <strong>Region</strong>: {obj?.population}
+            <strong>Region</strong>: {obj?.region}
           </p>
           <p>
-            <strong>Capital</strong>: {obj?.population}
+            <strong>Capital</strong>: {obj?.capital}
           </p>
         </div>
       </li>
